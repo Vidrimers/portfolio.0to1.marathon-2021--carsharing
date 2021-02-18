@@ -29,6 +29,9 @@ node_modules
 # logs
 npm-debug.log
 
+#gitignore
+/.gitignore
+
 temp
 Temp
 !temp
