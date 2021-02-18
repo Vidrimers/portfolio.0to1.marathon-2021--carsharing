@@ -1,0 +1,154 @@
+@import 'media.scss';
+// ПЕРЕМЕННЫЕ
+$df:flex;
+$jcsb: space-between;
+$color-1:#332208;
+$color-2:#FEFEFE;
+$color-3:#1B1818;
+$color-4:#C5AC2D;
+$fs16:1.6rem;
+$fs18:1.8rem;
+$roboto:'Roboto Condensed',
+sans-serif;
+$fira:'Fira Sans',
+sans-serif;
+
+// МИКСИНЫ
+@mixin jcsb($df, $jcsb) {
+    display: $df;
+    justify-content: $jcsb;
+}
+
+@mixin m0a {
+    margin: 0 auto
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+
+// ШАБЛОНЫ
+%jcsb {
+    display: flex;
+    justify-content: space-between;
+}
+
+.marathon {
+    display: block;
+    font-size: 1.2rem;
+    color: $color-2;
+    text-align: center;
+    background: $color-1;
+    border-bottom: 1px solid $color-4;
+}
+
+* {
+    font-family: $roboto;
+    color: $color-3;
+    font-size: $fs16;
+    line-height: 1.9rem;
+    font-weight: 400;
+    // font-family: 'Fira Sans', sans-serif;
+}
+
+.container {
+    max-width: 122rem;
+    padding: 0 1rem;
+    @include m0a;
+    // margin: 0 auto;
+}
+
+.header {
+    background-color: $color-1;
+
+    &__inner {
+        @include jcsb($df, $jcsb);
+        // @extend %jcsb;
+        align-items: center;
+        height: 10rem;
+    }
+}
+
+.phone {
+    color: #FEFEFE;
+    font-size: 1.8rem;
+}
+
+.application-btn {
+    display: inline-block;
+    background: $color-4;
+    color: $color-2;
+    // width: 20rem;
+    // height: 5rem;
+    padding: 16px 19px 15px;
+    text-transform: uppercase;
+    transition: all .5s;
+    border: .1rem solid transparent;
+
+    &:hover {
+        background: $color-2;
+        color: $color-4;
+        border: .1rem solid $color-4;
+
+    }
+}
+
+.menu {
+    .menu__list {
+        display: $df;
+
+        .menu__item {
+            margin: 0 1.5rem;
+
+            .menu__list-link {
+                color: #FEFEFE;
+                font-size: $fs18;
+                line-height: 2.1rem;
+                padding-bottom: .5rem;
+                text-transform: uppercase;
+                transition: ease .5s;
+                border-bottom: 1px solid transparent;
+
+                &:hover {
+                    border-bottom: 1px solid #FEFEFE;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+.top {
+    &__heading {
+        display: $df;
+        padding: 5rem 0 3rem;
+
+        .top__content {
+            text-align: center;
+            padding-top: 9rem;
+            width: 50%;
+
+            .top__title {
+                font-family: $fira;
+                font-weight: 500;
+                font-size: 4.8rem;
+                line-height: 5.8rem;
+                margin: 0 auto 2rem;
+                // max-width: 45.5rem;
+            }
+
+            .top__text {
+                font-size: 2.4rem;
+                line-height: 2.8rem;
+                margin: 0 auto 6rem;
+                max-width: 47rem;
+            }
+
+
+        }
+    }
+}
