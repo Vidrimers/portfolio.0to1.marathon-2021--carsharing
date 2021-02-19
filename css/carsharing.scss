@@ -186,6 +186,17 @@ sans-serif;
                     width: 60rem;
                     height: 45rem;
                 }
+
+                .top__slider-text {
+                    font-family: $fira;
+                    font-weight: 500;
+                    padding-right: 10rem;
+                    text-align: right;
+
+                    & span+span {
+                        padding-left: 1rem;
+                    }
+                }
             }
         }
     }
