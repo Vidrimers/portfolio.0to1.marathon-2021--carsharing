@@ -95,6 +95,26 @@ sans-serif;
     }
 }
 
+.slick-dots {
+    list-style: none;
+    text-align: center;
+
+    button {
+        background: $color-3;
+        font-size: 0;
+        width: 0.8rem;
+        height: 0.8rem;
+        border: none;
+        border-radius: 50%;
+        // padding: 0;
+    }
+
+    .slick-active button {
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+}
+
 .menu {
     .menu__list {
         display: $df;
@@ -149,6 +169,24 @@ sans-serif;
             }
 
 
+        }
+
+        .top__slider {
+            width: 50%;
+
+            .slick-dots {
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            .top__slider-item {
+                .top__slider-image {
+                    width: 60rem;
+                    height: 45rem;
+                }
+            }
         }
     }
 }
