@@ -2,12 +2,15 @@
 // ПЕРЕМЕННЫЕ
 $df:flex;
 $jcsb: space-between;
+// ЦВЕТА
 $color-1:#332208;
 $color-2:#FEFEFE;
 $color-3:#1B1818;
 $color-4:#C5AC2D;
+// РАЗМЕР ШРИФТОВ
 $fs16:1.6rem;
 $fs18:1.8rem;
+// ШРИФТЫ
 $roboto:'Roboto Condensed',
 sans-serif;
 $fira:'Fira Sans',
@@ -17,6 +20,10 @@ sans-serif;
 @mixin jcsb($df, $jcsb) {
     display: $df;
     justify-content: $jcsb;
+}
+
+@mixin fl {
+    display: $df;
 }
 
 @mixin m0a {
@@ -194,8 +201,57 @@ sans-serif;
                     text-align: right;
 
                     & span+span {
-                        padding-left: 1rem;
+                        padding-left: 1.2rem;
                     }
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        display: $df;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        .top__items {
+            width: 50%;
+            display: $df;
+            justify-content: space-around;
+
+            .top__item {
+                @include fl;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                text-align: center;
+                padding: 1rem;
+                width: 15rem;
+                height: 15rem;
+                border: .1rem solid $color-3;
+                box-shadow: 0 .4rem .4rem rgba(0, 0, 0, 0.25);
+                cursor: pointer;
+
+
+                &-img {
+                    padding: 2rem 0 1rem 0;
+                }
+
+                &:hover {
+                    transform: scale(1.25);
+                    transition: all .5s;
+                }
+            }
+        }
+
+        .top__links {
+            padding-right: 8rem;
+
+            .top__link {
+                color: $color-3;
+                border-bottom: 1px solid $color-3;
+
+                &+.top__link {
+                    margin-left: 2rem;
                 }
             }
         }
