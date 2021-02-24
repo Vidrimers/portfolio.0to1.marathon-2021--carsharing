@@ -10,15 +10,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Roboto+Condensed&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="css/reset_css_lite.css" />
   <link rel="stylesheet" href="css/carsharing.css" />
 </head>
 
 <body>
-  <a class="marathon" target="_blank" href="https://www.youtube.com/watch?v=DEj6IvZLFUM">Верстка сделана по марафону
-    2021 с
-    канала "От 0 до 1"
-  </a>
+  <div class="marathon">
+    <a class="marathon__link" target="_blank" href="https://www.youtube.com/watch?v=DEj6IvZLFUM">Верстка сделана по
+      марафону
+      2021 с
+      канала "От 0 до 1"
+    </a>
+    <a class="marathon__link" target="_blank"
+      href="https://github.com/Vidrimers/portfolio.0to1__2021-marathon--carsharing">Использовано: SCSS, вместо CSS. мой
+      гит: Vidrimers
+    </a>
+  </div>
   <header class="header">
     <div class="container">
       <div class="header__inner">
@@ -56,7 +64,8 @@
           <p class="top__text">
             Закажи эксклюзивный автомобиль через мобильное приложение в любой точке города
           </p>
-          <a class="application-btn" href="#">Скачать приложение</a>
+          <a class="application-btn" target="_blank"
+            href="https://play.google.com/store/apps/details?id=com.destroy.car.simulator">Скачать приложение</a>
         </div>
         <div class="top__slider">
           <div class="top__slider-item">
@@ -118,7 +127,7 @@
     </div>
   </section>
   <section class="rent">
-    <div class="conatiner">
+    <div class="container">
       <div class="rent__inner">
         <div class="rent__content">
           <h3 class="rent__title">Условия аренды
@@ -127,15 +136,192 @@
           </p>
           <p class="rent__text">Именно для того, что бы Вам было приятно и безопасно пользоваться нашим сервисом на
             постоянной основе, мы выделили несколько условий для того, чтобы взять машину в аренду</p>
-          <a class="application-btn" href="#">Скачать приложение</a>
+          <a class="application-btn" target="_blank"
+            href="https://play.google.com/store/apps/details?id=com.destroy.car.simulator">Скачать приложение</a>
 
         </div>
-        <div class="rent__item"></div>
+        <div class="rent__item">
+          <div class="rent__item-num">01</div>
+          <p class="rent__item-title">Опыт вождения <br>
+            от 2х лет
+          </p>
+          <p class="rent__item-text">Для того, чтобы арендовать автомобиль, Вам необходимо зарегистрировать свои права в
+            нашем мобильном приложении
+          </p>
+        </div>
+        <div class="rent__item">
+          <div class="rent__item-num">02</div>
+          <p class="rent__item-title">Только по Мухосранску
+          </p>
+          <p class="rent__item-text">Наши автомобили работают только в пределах Мухосранска.
+            За город на наших автомобилях, к сожалению, выезжать нельзя.</p>
+        </div>
+        <div class="rent__item">
+          <div class="rent__item-num">03</div>
+          <p class="rent__item-title">Мобильный телефон и интернет</p>
+          <p class="rent__item-text">Для использования нашего сервиса Вам необходим мобильный телефон и интернет.
+            Бронирование, оплата и вся отчетность происходит онлайн</p>
+        </div>
       </div>
     </div>
   </section>
+  <section class="benefits">
+    <div class="container">
+      <h3 class="benefits__title">Преимущества</h3>
+      <div class="benefits__items">
+        <ul class="benefits__list">
+          <li class="benefits__list-item">мойка авто каждую неделю
+          </li>
+          <li class="benefits__list-item">премиум автомобили
+          </li>
+          <li class="benefits__list-item">мощный двигатель
+          </li>
+          <li class="benefits__list-item">поддержка 24/7
+          </li>
+          <li class="benefits__list-item">бензин за наш счет
+          </li>
+          <li class="benefits__list-item">парковка по всему городу
+          </li>
+          <li class="benefits__list-item">каждый месяц ТО автомобиля</li>
+        </ul>
+        <img class="benefits__images" src="img/car-2.png" alt="">
+        <div class="benefits__content">
+          <p class="benefits__text">Вы можете выбрать один из 300 наших автомобилей, насладиться сервисом, повысить
+            уровень жизни, не покупая дорогой автомобиль, успевать везде и каждый день ездить на новом премиум
+            автомобиле.
+          </p>
+          <p class="benefits__text">Посмотрите видео презентацию нашего сервиса и выберите автомобиль уже сейчас!</p>
+          <a class="video-popup" data-fancybox href="https://www.youtube.com/watch?v=qjo8UgH3VYU">ПОСМОТРЕТЬ <br>
+            ПРЕЗЕНТАЦИЮ</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="reviews">
+    <div class="container">
+      <h3 class="reviews__title">
+        Отзывы
+      </h3>
+      <div class="reviews__slider">
+        <div class="reviews__item">
+          <p class="reviews__item-name">Михаил, 28 лет
+          </p>
+          <p class="reviews__item-text">Очень рад, что Вы есть!
+            Пока еще бэху купить не могу, но покататься взять - это отличная возможность!
+            Такое ощущение, что у меня личный огромный автопарк элитных тачек)))
+          </p>
+        </div>
+        <div class="reviews__item">
+          <p class="reviews__item-name">Инна, 35 лет
+
+
+          </p>
+          <p class="reviews__item-text">Очень радует Ваш сервис. Встречаю ВИП клиентов всегда только на Ваших машинах.
+            Удобно, что расчет по минутам, это экономит бюджет компании.
+
+          </p>
+        </div>
+        <div class="reviews__item">
+          <p class="reviews__item-name">Игорь, 25 лет
+          </p>
+          <p class="reviews__item-text">Ребята, Вы ТОПЧИК!
+            Брал машину на свидание, покатал девушку, она в восторге, я доволен, все счастливы)
+
+          </p>
+        </div>
+        <div class="reviews__item">
+          <p class="reviews__item-name">Марина, 30 лет
+
+          </p>
+          <p class="reviews__item-text">Очень рад, что Вы есть!
+            Пока еще бэху купить не могу, но покататься взять - это отличная возможность!
+            Такое ощущение, что у меня личный огромный автопарк элитных тачек)))
+          </p>
+        </div>
+        <div class="reviews__item">
+          <p class="reviews__item-name">Михаил Иванович, 60 лет
+          </p>
+          <p class="reviews__item-text">Люблю Ваш сервис. Не люблю такси. В приложении быстро нахожу машину поблизости.
+            Всегда чистая, свежая, приятно садиться в нее. До работы или на шопинг еду с комфортом.
+          </p>
+        </div>
+        <div class="reviews__item">
+          <p class="reviews__item-name">Антон, 28 лет
+          </p>
+          <p class="reviews__item-text">Мне заплатили за отзыв 100 рублей
+          </p>
+        </div>
+        <div class="reviews__item">
+          <p class="reviews__item-name">Петя, 8 лет
+          </p>
+          <p class="reviews__item-text">Люблю Ваш сервис. Не люблю такси. В приложении быстро нахожу машину поблизости.
+            Всегда чистая, свежая, приятно садиться в нее. До работы или на шопинг еду с комфортом.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="feedback">
+    <div class="container">
+      <div class="feedback__inner">
+        <img class="feedback__image" src="img/car-3.png" alt="">
+        <form class="feedback__form" action="">
+          <h3 class="feedback__title">
+            Остались вопросы?
+          </h3>
+          <p class="feedback__text">Мы перезвоним Вам и проконсультируем по любому вопросу</p>
+          <input class="feedback__input" type="text" placeholder="Имя">
+          <input class="feedback__input" type="text" placeholder="Телефон">
+          <button class="feedback__btn" type="submit">ОСТАВЬ ЗАЯВКУ</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <a class="application-btn" target="_blank"
+          href="https://play.google.com/store/apps/details?id=com.destroy.car.simulator">Скачать приложение</a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__list-link" href="#">О НАС</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__list-link" href="#">АВТОПАРК</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__list-link" href="#">ОТЗЫВЫ</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__list-link" href="#">УСЛОВИЯ</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__list-link" href="#">КОНТАКТЫ</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="phone" target="_blank" href="https://youtu.be/ovmieCcrjnY">8 800 555 35 35</a>
+      </div>
+      <ul class="footer__social">
+        <li class="footer__social-item">
+          <a class="footer__social-link" href="">
+            <img class="footer__social-img" src="img/svg/social-facebook.svg" alt="">
+          </a></li>
+        <li class="footer__social-item">
+          <a class="footer__social-link" href="">
+            <img class="footer__social-img" src="img/svg/social-instagram.svg" alt="">
+          </a></li>
+        <li class="footer__social-item">
+          <a class="footer__social-link" href="">
+            <img class="footer__social-img" src="img/svg/social-youtube.svg" alt="">
+          </a></li>
+      </ul>
+    </div>
+  </footer>
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 </body>
 
