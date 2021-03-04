@@ -6,38 +6,38 @@
 //}
 //media.scss
 
-@mixin _1170 {
-    @media screen and (max-width: 1170px) {
+@mixin _117 {
+    @media screen and (max-width: 117rem) {
         @content;
     }
 }
 
-@mixin _979 {
-    @media screen and (max-width: 979px) {
+@mixin _97 {
+    @media screen and (max-width: 97.9rem) {
         @content;
     }
 }
 
-@mixin _768 {
-    @media screen and (max-width: 768px) {
+@mixin _76 {
+    @media screen and (max-width: 76.8rem) {
         @content;
     }
 }
 
-@mixin _600 {
-    @media screen and (max-width: 600px) {
+@mixin _60 {
+    @media screen and (max-width: 60rem) {
         @content;
     }
 }
 
-@mixin _480 {
-    @media screen and (max-width: 480px) {
+@mixin _48 {
+    @media screen and (max-width: 48rem) {
         @content;
     }
 }
 
-@mixin _350 {
-    @media screen and (max-width: 350px) {
+@mixin _35 {
+    @media screen and (max-width: 35rem) {
         @content;
     }
 }
