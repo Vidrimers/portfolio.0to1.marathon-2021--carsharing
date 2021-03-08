@@ -1,15 +1,15 @@
-$(function() {
+$(function () {
     $('.top__slider').slick({
         arrows: false,
         dots: true,
         autoplay: true,
         fade: true,
-        // responsive: [{
-        //     breakpoint: 1200,
-        //     settings: {
-        //         dots: false
-        //     }
-        // }, ]
+        responsive: [{
+            breakpoint: 1200,
+            settings: {
+                dots: false
+            }
+        }, ]
     });
 
     $('.reviews__slider').slick({
@@ -20,7 +20,7 @@ $(function() {
 
     });
 
-    $('.menu__btn').on('click', function (){
+    $('.menu__btn').on('click', function () {
         console.log('YOBA ETO TY?')
         $('.menu__list').toggleClass('menu__list--active');
     });
