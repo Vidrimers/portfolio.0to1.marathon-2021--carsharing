@@ -570,6 +570,55 @@ body {
 
 // МЕДИА ЗАПРОСЫ
 
+// slg 1170
+// TODO разобраться с брейкопинтом в mq
+@media (max-width: 1170px) {
+
+    // @include mq(slg) {
+    .rent {
+        &__inner {
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            .rent__content {
+                text-align: center;
+                width: 100%;
+                margin-bottom: 3rem;
+            }
+
+            .rent__item {
+                margin: 3rem;
+            }
+        }
+    }
+
+    .benefits {
+        .benefits__items {
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 100%;
+
+            .benefits__list {}
+
+            .benefits__images {
+                width: 50%;
+            }
+
+            .benefits__content {
+                width: 100%;
+
+                .benefits__text+.benefits__text {
+                    width: 100%;
+                }
+
+                .benefits__text {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
 // lg 992
 @include mq(lg) {
     .marathon {
@@ -677,6 +726,44 @@ body {
         }
 
     }
+
+    .benefits {
+        .benefits__items {
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 100%;
+
+            .benefits__list {
+                width: 100%;
+
+                .benefits__list-item {
+                    margin-right: 0 !important;
+                    padding-right: 0;
+                    padding-left: 3rem;
+                    text-align: left;
+
+                    &::after {
+                        // right: 0rem;
+                        left: 0rem;
+
+                    }
+
+                }
+            }
+
+            .benefits__images {
+                width: 70%;
+            }
+
+            .benefits__content {
+
+                // width: 100%;
+                .benefits__text {
+                    // text-align: center;
+                }
+            }
+        }
+    }
 }
 
 // md 768
@@ -693,10 +780,28 @@ body {
         .top__item {
             margin: 2rem;
         }
+    }
 
+    .rent {
+        &__inner {
+            .rent__content {
+                // text-align: center;
+                // margin-bottom: 3rem;
+            }
 
+            .rent__item {
+                width: 100%;
+                margin: 3rem 0;
+                min-height: 24.5rem;
+
+                &-title {
+                    margin-bottom: 2rem;
+                }
+            }
+        }
     }
 }
+
 
 // sm 576px
 @include mq(sm) {
@@ -748,4 +853,6 @@ body {
 
         }
     }
+
+
 }
