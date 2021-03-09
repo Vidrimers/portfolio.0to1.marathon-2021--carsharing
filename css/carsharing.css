@@ -561,6 +561,7 @@ body {
   }
   .benefits .benefits__items .benefits__content {
     width: 100%;
+    text-align: center;
   }
   .benefits .benefits__items .benefits__content .benefits__text + .benefits__text {
     width: 100%;
