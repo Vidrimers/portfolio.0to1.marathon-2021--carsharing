@@ -626,6 +626,8 @@ body {
         display: flex;
         text-align: center;
         align-items: center;
+        z-index: 0;
+
 
         &__link {
             width: 33.33%;
@@ -677,11 +679,9 @@ body {
             background-color: $color-1;
             transform: translateY(-50rem);
             transition: all .5s;
-            // z-index: 0;
 
             &.menu__list--active {
                 transform: translateY(1rem);
-
             }
 
             &-link {
@@ -765,6 +765,35 @@ body {
             }
         }
     }
+
+    .feedback {
+        &__inner {
+            .feedback__image {
+                display: none;
+            }
+
+            .feedback__form {
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+    }
+
+    .footer {
+        &__top {
+            .menu {
+                display: none;
+            }
+        }
+    }
+
+    .rent,
+    .benefits,
+    .reviews,
+    .feedback,
+    .footer {
+        padding: 5rem 0;
+    }
 }
 
 // md 768
@@ -798,6 +827,18 @@ body {
                 &-title {
                     margin-bottom: 2rem;
                 }
+            }
+        }
+    }
+
+    .footer {
+        &__top {
+            flex-direction: column;
+            align-items: center;
+
+            .phone {
+                display: inline-block;
+                margin-top: 3rem;
             }
         }
     }
